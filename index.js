@@ -182,9 +182,10 @@ const tweet = async () => {
 
 
 // Schedule the tweet function to run every 10 minutes
-cron.schedule('*/1 * * * *', tweet);
+cron.schedule('0 * * * *', tweet);
 
 
 
-console.log("Started scheduler to tweet every 1 minutes.");
+
+console.log("Started scheduler to tweet every hour.");
 
